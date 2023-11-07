@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Student Admission Form</h2>
+    <form action="">
+        <label>Full Name</label>
+        <input type="text" required minlength="8" maxlength="30">
+        <br><br>
+        <label>Date of Birth</label>
+        <input type="date">
+        <br><br>
+        <label>Email Address</label>
+        <input type="email">
+        <br><br>
+        <!-- name attribute important -->
+        <label>Gender</label>
+        <input type="radio" name="gender">male
+        <input type="radio" name="gender">female
+        <br><br>
+        <label>Address</label><br>
+        <textarea cols="25" rows="5"></textarea>
+        <br><br>
+
+        <label>City</label>
+        <select>
+            <option value="barabanki">Barabanki</option>
+            <option value="kanpur">Kanpur</option>
+            <option value="varanasi">Varanasi</option>
+            <option value="lucknow">Lucknow</option>
+        </select>
+        <br><br>
+
+        <!-- Important Tag -->
+        <label>Board of Intermediate</label>
+        <input type="text" list="board" placeholder="select">
+        <datalist id="board">
+            <option value="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="State Board">State Board</option>
+        </datalist>
+        <!-- Important Tag ends-->
+        <br><br>
+
+        <input type="checkbox"><label for="">I accept terms and conditions</label>
+        <br>
+        <input type="checkbox"><label for="">Subscribe to weekly newsletter</label>
+
+        <br><br>
+
+        <details>
+            <summary>View Terms and conditions</summary>
+            <p>Lorem ipsum dolor sit <mark>amet</mark> consectetur adipisicing elit. Odit, a!</p>
+        </details>
+        <button type="submit">Submit</button>
+        <!-- <input type="submit"> -->
+        <!-- min works with number that entered number is >=< and minlength works with the length of text -->
+    </form>
+
+</body>
+</html>
+
+
+
+<!-- learning -->
+<!-- ctrl+space inside tag and at place of value -->
+<!-- whatwg html specification -->
+<!-- https://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#void
+    elements -->
+<!-- new tags = details>summary,datalist>option,mark -->
+<!-- input banao aur list-attribute me datalist ki id dedo-->
