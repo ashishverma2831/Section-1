@@ -2,6 +2,8 @@ csstricks
 pinterest
 awwwards
 colorgradient.dev
+flaticon.com
+keyframes.app
 
 dribbble
 behance

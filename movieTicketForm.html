@@ -4,44 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto;
+        }
+        body{
+            background-image: linear-gradient(90deg,rgba(255, 0, 0, 0.507),rgba(0, 0, 255, 0.514));
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+        }  
+        .container {
+            width: 28%;
+            height: auto;
+            margin: 3% auto;
+            /* display: flex;
+            flex-direction: column; */
+            padding: 24px;
+            background-color: rgba(255, 255, 255, 0.307);
+            border-radius: 12px;
+        }
+        h1{
+            text-align: center;
+            color: rgba(0, 0, 0, 0.704);
+            margin: 24px 0;
+        }
+        #input{
+            padding: 8px 12px;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            margin: 4px 0;
+        }
+        label{
+            font-size: 18px;
+        }
+        #button{
+            text-align: center;
+        }
+        #btn{
+            cursor: pointer;
+            padding: 8px 16px;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            background: rgba(0, 0, 255, 0.582);
+            color: white;
+            margin: 0 auto;
+        }
+        #btn:hover{
+            background: rgba(0, 0, 255, 0.704);
+        }
+    </style>
 </head>
 <body>
 
-    <form>
-        <label for="">Movie Title</label>
-        <input type="text">
+    <form class="container">
+        <h1>Movie Ticket Form</h1>
+
+        <label for="input">Movie Title</label>
+        <input id="input" type="text" placeholder="enter the movie title">
         <br><br>
 
         <label for="">Directed by</label>
-        <input type="text">
+        <input id="input" type="text" placeholder="enter the directed by">
         <br><br>
 
         <label for="">Date of Release</label>
-        <input type="date">
+        <input id="input" type="date">
         <br><br>
 
         <label for="">Time</label>
-        <input type="time">
+        <input id="input" type="time">
         <br><br>
 
         <label for="">Address</label>
         <br>
-        <textarea></textarea>
+        <textarea id="input" placeholder="enter the address"></textarea>
         <br><br>
 
         <label for="">Pincode</label>
-        <input type="number" name="" id="">
+        <input id="input" type="number" name="" id="" placeholder="pincode">
         <br><br>
 
         <label for="">Row</label>
-        <input type="text">
+        <input id="input" type="text" placeholder="e.g. H">
         <br><br>
 
         <label for="">Seat Number</label>
-        <input type="text">
+        <input id="input" type="text" placeholder="e.g. 5">
         <br><br>
 
-        <button type="submit">Submit</button>
+        <div id="button">
+            <button id="btn" type="submit">Submit</button>
+        </div>
     </form>
     
 </body>
