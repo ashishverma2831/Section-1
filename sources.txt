@@ -4,6 +4,7 @@ awwwards
 colorgradient.dev
 flaticon.com
 keyframes.app
+scrollReveal
 
 dribbble
 behance
