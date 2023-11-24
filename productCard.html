@@ -6,7 +6,7 @@
     <title>Using Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
     <style>
         .my-img{
             height: 300px;
@@ -20,6 +20,16 @@
             background-size: cover;
             background-position: center;
         }
+        .title{
+            transform: perspective(500px);
+        }
+        .card{
+            transform-style: preserve-3d ;
+            transform: perspective(1000px);
+        }
+        .card-body{
+            transform: translateZ(30px);
+        }
     </style>
 </head>
 <body class="bg-body-primary">
@@ -28,13 +38,13 @@
     <!-- header -->
     <header class="bg-dark text-white d-flex">
         <div class="container py-5 my-auto">
-            <h1 class="text-center display-1 fw-bold">Super Black Friday Sale</h1>
-            <p class="text-center fs-4">Lorem ipsum dolor uga, deleniti? Nihil reiciendis rerum molestias perspiciatis?</p>
+            <h1 class="text-center display-1 fw-bold title">Super Black Friday Sale</h1>
+            <p class="text-center fs-4 sub-title">Lorem ipsum dolor uga, deleniti? Nihil reiciendis rerum molestias perspiciatis?</p>
             <!-- <div class="input-group">
                 <input type="text" class="form-control">
                 <button class="btn btn-warning">Search</button>
             </div> -->
-            <div class="input-group w-75 mx-auto">
+            <div class="input-group w-75 mx-auto search">
                 <div class="input-group-text">
                     <i class="fa-solid fa-magnifying-glass fa-beat"></i>
                 </div>
@@ -152,14 +162,40 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         ScrollReveal().reveal('.card',{
             // delay:3000,
             origin:'bottom',
             distance:'50px',
-            interval:100
+            interval:100,
+            scale:0.8
         });
+        ScrollReveal().reveal('.title',{
+            origin:'bottom',
+            distance:'70px',
+            rotate:{
+                x:-90
+            },
+            // duration:3000
+        })
+        ScrollReveal().reveal('.sub-title',{
+            origin:'right',
+            distance:'100px'
+        })
+        ScrollReveal().reveal('.search',{
+            origin:'left',
+            distance:'100px'
+        })
+    </script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll('.card'),{
+            max: 20,
+            speed:500,
+            // glare:true
+        } );
     </script>
 </body>
 </html>

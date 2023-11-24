@@ -5,6 +5,9 @@ colorgradient.dev
 flaticon.com
 keyframes.app
 scrollReveal
+vanilla-tilt.js
+
+github-bradtraversary/design resources for developers
 
 dribbble
 behance
