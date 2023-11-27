@@ -6,6 +6,7 @@ flaticon.com
 keyframes.app
 scrollReveal
 vanilla-tilt.js
+bradtraversary
 
 github-bradtraversary/design resources for developers
 
