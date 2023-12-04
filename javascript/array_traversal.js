@@ -76,8 +76,6 @@ console.log(newNames12)
 console.log('\n')
 
 
-
-
 const names123 = ['katrina kaif','kareena kapoor','deepika padukone','ashi sinha','ashu sharma','anvu verma','abcde xyz']
 const newNames123 = names123.map((name)=>{
     let firstName = name.split(' ');
