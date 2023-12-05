@@ -12,7 +12,18 @@ const getAvg = function(m,n,o,p){
 getAvg(45,23,45,67)
 console.log(getAvg(4,5,23,4))
 
+const factorial = (n) => {
+    let f = 1;
+    for(let i=2; i<=n; i++){
+        f = f*i;
+    }
 
+    // console.log(f);
+    return f;
+};
+
+let ans = factorial(5);
+console.log(ans);
 
 
 // check prime
